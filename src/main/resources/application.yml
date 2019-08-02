@@ -1,0 +1,12 @@
+
+spring:
+  datasource:
+    name: test  #数据库名
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #url
+    username: root  #用户名
+    password: 123456  #密码
+    driver-class-name: com.mysql.jdbc.Driver  #数据库链接驱动
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+  type-aliases-package: com.example.test.bean #配置实体类
